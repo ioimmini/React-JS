@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
+import style from "./Button.module.css";
 
 function Button({ text }){
-return <button>{text}</button>;
+return <button className={style.btn}>{text}</button>;
 }
 
 Button.protoTypes = {
