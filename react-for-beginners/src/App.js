@@ -10,7 +10,11 @@ function App() {
   const onChange = (event) => setKeyword(event.target.value);
 
   useEffect(() => {
+    
   }, []);
+  useEffect(() => {
+    
+  }, [keyword]);
   return (
     <div>
       <input 
