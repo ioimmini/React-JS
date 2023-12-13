@@ -21,10 +21,14 @@ function Home(){
   return (
     <div className={styles.container}>
       {loading ? (
-        <h1>Loading...</h1>
+                <div className={styles.loader}>
+                <span>Loading...</span>
+              </div>
       ) : (
-        <div className={styles.movies}>
+        <div className={styles.movie_div}>
           <h1 className={styles.home}><a href="">Movie</a></h1>
+        
+        <div className={styles.movies}>
           {movies.map((movie) => (
             <Movie
               key={movie.id}
@@ -36,6 +40,7 @@ function Home(){
               year={movie.year}
             />
           ))}
+        </div>
         </div>
       )}
     </div>
