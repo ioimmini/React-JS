@@ -24,6 +24,7 @@ function Home(){
         <h1>Loading...</h1>
       ) : (
         <div className={styles.movies}>
+          <h1 className={styles.home}><a href="">Movie</a></h1>
           {movies.map((movie) => (
             <Movie
               key={movie.id}

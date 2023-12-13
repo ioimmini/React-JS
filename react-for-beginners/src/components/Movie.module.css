@@ -1,10 +1,10 @@
 .movie {
-    background-color: white;
+    background-color: #F1FAEE;
     margin-bottom: 70px;
     font-weight: 300;
     padding: 20px;
     border-radius: 5px;
-    color: #adaeb9;
+    color: #457B9D;
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 2fr;
     grid-gap: 20px;
@@ -17,7 +17,7 @@
   .movie__img {
     position: relative;
     top: -50px;
-    max-width: 150px;
+    max-width: 200px;
     width: 100%;
     margin-right: 30px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
@@ -33,11 +33,17 @@
   
   .movie__title a {
     margin-bottom: 5px;
-    font-size: 24px;
+    font-size: 40px;
     color: #2c2c2c;
     text-decoration: none;
   }
-  
+  .movie_detail{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+
+}
   .movie__genres {
     list-style: none;
     padding: 0;
@@ -50,5 +56,9 @@
   .movie__genres li,
   .movie__year {
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 30px;
   }
+
+  .movie_summary{
+    font-size: 20px;
+}
